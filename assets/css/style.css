@@ -27,7 +27,7 @@ ul {
   padding-top: 50px;
 }
 i {
-  color: rgb(234, 204, 194, 0.5);
+  color: rgb(234, 204, 194, 0.2);
 
   margin: 0;
 }
@@ -42,10 +42,11 @@ i {
   margin-left: -5px;
 }
 .rahmen {
-  border-left: 1px solid rgb(234, 204, 194, 0.5);
+  border-left: 0.5px solid rgb(234, 204, 194, 0.5);
   padding: 27px;
   margin-left: 7px;
   margin-top: 3px;
+  opacity: 0.5;
 }
 
 /* .rahmen:nth-of-type(2) {
@@ -307,8 +308,9 @@ h2 {
 .wrapper ul {
   float: right;
   position: absolute;
-  top: -15%;
-  right: -3%;
+  top: 5%;
+  right: 0%;
+  margin: -10.5% -6%;
 }
 .wrapper header h2 {
   margin: 10% 35%;
@@ -409,8 +411,26 @@ video {
 }
 
 @media (max-width: 1395px) {
+  .argilla2 {
+    text-align: center;
+    display: block;
+    width: 200px;
+    padding: 0;
+  }
+  .info2 h4 {
+    margin-left: 25%;
+    margin-top: -5%;
+  }
+
+  .preis {
+    padding-top: 10px;
+  }
+  input[type="button"] {
+    margin-left: 35%;
+    margin-top: 1%;
+  }
   .kopfhörer {
-    margin-left: 0%;
+    margin-left: -7%;
   }
 }
 @media (max-width: 1145px) {
@@ -418,15 +438,109 @@ video {
     margin-left: 0%;
     width: 90%;
   }
+  .index .rahmen {
+    display: none;
+  }
+  input[type="text"] {
+    margin-top: 5px;
+    padding-bottom: 1%;
+    width: 400px;
+  }
+  input[type="email"] {
+    padding-bottom: 1%;
+    width: 400px;
+  }
+  input[type="button"] {
+    margin-left: 52%;
+    margin-top: 1%;
+  }
+  form {
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+  .argilla {
+    width: 400px;
+  }
+  .argilla2 {
+    width: 200px;
+  }
+  .argilla_bright2 {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .preis {
+    padding-top: 10px;
+  }
+  input[type="button"] {
+    margin-left: 35%;
+    margin-top: 1%;
+  }
 }
 
 @media (max-width: 1100px) {
   span {
     display: inline;
   }
+  input[type="text"] {
+    margin-top: 5px;
+    padding-bottom: 1%;
+    width: 350px;
+  }
+  input[type="email"] {
+    padding-bottom: 1%;
+    width: 350px;
+  }
+
+  form {
+    margin-left: 10%;
+    margin-top: 2%;
+  }
+  .argilla {
+    width: 350px;
+  }
+  .argilla2 {
+    width: 150px;
+  }
+
+  input[type="button"] {
+    margin-left: 35%;
+    margin-top: 1%;
+  }
 }
 
 @media (max-width: 992px) {
+  .bottom {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 60%;
+    min-height: 50%;
+    margin: 0 auto;
+  }
+  .bottom .alchemy {
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 15%;
+  }
+  .center {
+    width: 80%;
+  }
+  .bottom h2 {
+    text-align: center;
+    margin-top: 8%;
+  }
+  .wrapper ul {
+    top: -5%;
+    right: 0%;
+  }
+  .bottom footer {
+    margin-bottom: 15%;
+    text-align: justify;
+  }
+  video {
+    width: 600px;
+    height: 480px;
+  }
+
   .bild {
     width: 55%;
   }
@@ -457,8 +571,35 @@ video {
   .you {
     margin-right: 1px;
   }
+  input[type="text"] {
+    margin-top: 5px;
+    padding-bottom: 1%;
+    width: 300px;
+  }
+  input[type="email"] {
+    padding-bottom: 1%;
+    width: 300px;
+  }
+
+  .argilla {
+    width: 300px;
+  }
 }
 @media (max-width: 768px) {
+  .bottom2 {
+    width: 65%;
+    min-height: 80vh;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .text_links {
+    grid-row: 4/5;
+  }
+  .ins {
+    flex-direction: row;
+  }
   header ul {
     display: flex;
     flex-direction: column;
@@ -472,6 +613,19 @@ video {
     font-size: 12px;
     font-weight: 300;
     line-height: 3px;
+  }
+  input[type="text"] {
+    margin-top: 5px;
+    padding-bottom: 1%;
+    width: 250px;
+  }
+  input[type="email"] {
+    padding-bottom: 1%;
+    width: 250px;
+  }
+
+  .argilla {
+    width: 250px;
   }
 }
 @media (max-width: 676px) {
@@ -526,6 +680,55 @@ video {
     display: flex;
     background: rgb(255, 255, 255, 0.3);
   }
+  input[type="text"] {
+    margin-top: 5px;
+    padding-bottom: 1%;
+    width: 400px;
+    margin-left: 0%;
+  }
+  input[type="email"] {
+    padding-bottom: 1%;
+    width: 400px;
+    margin-left: 0%;
+  }
+
+  .argilla {
+    width: 400px;
+    margin: 0 auto;
+  }
+  input[type="button"] {
+    margin-bottom: 10%;
+  }
+  .mail {
+    margin-left: 50%;
+    margin-top: 20%;
+    margin-bottom: -10%;
+  }
+  h5 {
+    margin-left: 37%;
+  }
+  .info2 {
+    width: 100%;
+  }
+  .argilla2 {
+    width: 400px;
+  }
+  .argilla_bright2 {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .preis {
+    padding-top: 20px;
+    display: block;
+  }
+  .info2 h4 {
+    margin-left: 40%;
+    margin-top: -5%;
+  }
+  input[type="button"] {
+    margin-left: 45%;
+    margin-top: 1%;
+  }
 }
 @media (max-width: 455px) {
   article {
@@ -534,5 +737,67 @@ video {
     width: 100%;
     display: block;
     background: rgb(255, 255, 255, 0.3);
+  }
+  .bottom2 {
+    width: 100%;
+    min-height: 60vh;
+    margin: 5% 15%;
+  }
+  .ins {
+    position: absolute;
+    left: 20%;
+  }
+  .ins li:first-child {
+    margin-left: 30px;
+  }
+  .ins li {
+    line-height: 10px;
+  }
+  input[type="text"] {
+    margin-top: 5px;
+    padding-bottom: 1%;
+    width: 250px;
+    margin-left: 0%;
+  }
+  input[type="email"] {
+    padding-bottom: 1%;
+    width: 250px;
+    margin-left: 0%;
+  }
+
+  .argilla {
+    width: 350px;
+    margin: 0 auto;
+  }
+  input[type="button"] {
+    margin-bottom: 10%;
+    margin-left: 5%;
+  }
+  .mail {
+    margin-left: 45%;
+    margin-top: 20%;
+    margin-bottom: -10%;
+  }
+  h5 {
+    margin-left: 27%;
+  }
+  .argilla2 {
+    width: 300px;
+  }
+  .argilla_bright2 {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .preis {
+    padding-top: 20px;
+    display: block;
+  }
+  .info2 h4 {
+    margin-left: 35%;
+    margin-top: -5%;
+  }
+  input[type="button"] {
+    margin-left: 47%;
+    margin-top: 1%;
   }
 }
