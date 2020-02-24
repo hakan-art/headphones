@@ -234,7 +234,7 @@ form {
   display: block;
 }
 .center {
-  height: 100vh;
+  min-height: 100vh;
   width: 90%;
   margin: 0 auto;
   background: url(../img/section-about-1.jpg) center/cover no-repeat;
@@ -245,7 +245,7 @@ h2 {
   color: rgb(234, 204, 194);
 }
 .bottom {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -256,7 +256,9 @@ h2 {
 }
 .wrapper ul {
   float: right;
-  margin-top: -16%;
+  position: absolute;
+  top: -15%;
+  right: -3%;
 }
 .wrapper header h2 {
   margin: 10% 35%;
@@ -279,6 +281,81 @@ h2 {
 .wrapper .you {
   margin-right: 40px;
   margin-left: 10px;
+}
+/* inspiration.html*/
+
+video {
+  display: block;
+  margin: auto;
+}
+.bottom2 {
+  width: 65%;
+  min-height: 100vh;
+  margin: 5% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.buttons {
+  width: 72%;
+  margin: 5% auto;
+}
+.buttons h2 {
+  font-size: 40px;
+  margin-left: 5%;
+  margin-top: 16%;
+}
+.buttons h5 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 5%;
+  margin-top: 8%;
+  margin-bottom: -15%;
+  color: rgb(234, 204, 194);
+}
+
+.text_rechts,
+.text_links {
+  width: 100%;
+}
+.alchemy2,
+.alchemy3 {
+  width: 100%;
+}
+.sound {
+  margin-left: 5%;
+}
+.sumit {
+  color: rgb(234, 204, 194);
+  background: #2e2e2e;
+  border: 2px solid black;
+  padding: 0.5% 1%;
+  border-radius: 5%;
+  box-shadow: 0px 0px 1px 1px rgb(234, 204, 194);
+  margin-left: 0%;
+  margin-top: 1%;
+}
+.buttons p {
+  color: rgb(115, 115, 115);
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.bottom2 h2 {
+  margin-left: 5%;
+  margin-top: 18%;
+}
+.bottom2 p {
+  color: rgb(115, 115, 115);
+  line-height: 25px;
+  margin-left: 5%;
+}
+.bottom2 h5 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 5%;
+  margin-top: 20%;
+  margin-bottom: -15%;
+  color: rgb(234, 204, 194);
 }
 
 @media (max-width: 1395px) {
